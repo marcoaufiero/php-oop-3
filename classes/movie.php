@@ -16,6 +16,7 @@ class Movie extends Product{
     
         Int $duration,
         String $type
+        
         ) {
         $this->duration = $duration;
         $this->type = $type;
