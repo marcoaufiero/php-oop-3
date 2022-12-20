@@ -24,9 +24,9 @@ $products = [
 ];
 
 $employees = [
-    $employee1 = new Employee('Tom', 'Rogers', 26, 9,'E', 710),
-    $employee2 = new Employee('Sandra', 'White', 32, 5,'E', 401),
-
+    new Employee('Tom', 'Rogers', 26, 9,'E', 710),
+    new Employee('Sandra', 'White', 32, 5,'E', 401),
+    new Employee('Carl', 'Banks', 19, 3,'E', 184),
 ];
 
 
@@ -40,9 +40,22 @@ echo '<pre>';
 var_dump( $employees);
 echo '</pre>';
 
-echo $employee1->getID();
+echo $employees[0]->getId() . "<br>";
 
-foreach( $products as $product ){
-  
+
+foreach ($employees as $employee){
+    try{
+        if($employee->positiveFeebacks > 6){
+        echo "$employee->name è l'impiegato del mese" . "<br>" ;
+        }else{
+            throw new Exception("$employee->name non è l'impiegato del mese" . "<br>");
+        }
+    }catch(Exception $e){
+        echo $e->getMessage();
+    }
 }
+
+
+
+
 ?>
