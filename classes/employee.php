@@ -1,6 +1,10 @@
 <?php 
 
+include_once __DIR__ . '/../traits/id.php';
+
 class Employee{
+    
+    use id;
 
     public $name;
     public $lastName;

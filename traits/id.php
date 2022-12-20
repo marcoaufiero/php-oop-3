@@ -14,8 +14,8 @@ trait id{
         $this->number = $number;
     }
 
-    public function getId($character,$number){
-        return "ID : $character$number"
+    public function getId($character, $number){
+        return "ID : $character $number";
     }
 
 }
