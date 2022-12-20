@@ -3,6 +3,7 @@
 include_once __DIR__ . '/classes/genre.php';
 include_once __DIR__ . '/classes/book.php';
 include_once __DIR__ . '/classes/audiobook.php';
+include_once __DIR__ . '/classes/cd.php';
 
 
 $genres = [

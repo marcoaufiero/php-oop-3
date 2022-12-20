@@ -3,9 +3,8 @@
 include_once __DIR__ . '/product.php';
 
 class audioBook extends Product{
-  public $lenght;
+  public $duration;
   public $platform;
-  public $link;
 
   public function __construct(
     String $name,
@@ -15,17 +14,14 @@ class audioBook extends Product{
     Bool $published,
     String $image,
 
-    Int $lenght,
-    String $platform,
-    String $link
+    Int $duration,
+    String $platform
+
     ) {
-    $this->lenght = $lenght;
+    $this->duration = $duration;
     $this->platform = $platform;
-    $this->link = $link;
     parent::__construct($name,$author,$price,$genre,$published,$image);
   }
-
-
 }
 
 ?>
