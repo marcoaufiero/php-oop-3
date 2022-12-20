@@ -15,13 +15,19 @@ class Employee{
         String $name,
         String $lastName,
         Float $age,
-        Int $positiveFeebacks
+        Int $positiveFeebacks,
+
+        String $character,
+        Int $number
         
         ) {
         $this->name = $name;
         $this->lastName = $lastName;
         $this->age = $age;
         $this->positiveFeebacks = $positiveFeebacks;
+        
+        $this->character = $character;
+        $this->number = $number; 
       }
 
 }

@@ -27,10 +27,9 @@ $employees = [
     $employee1 = new Employee('Tom', 'Rogers', 26, 9,'E', 710),
     $employee2 = new Employee('Sandra', 'White', 32, 5,'E', 401),
 
-    $employee1->getID('E', 710)
 ];
 
-echo $employee1->getID('E', 710);
+
 
 echo '<pre>';
 var_dump( $products);
@@ -40,6 +39,8 @@ echo '</pre>';
 echo '<pre>';
 var_dump( $employees);
 echo '</pre>';
+
+echo $employee1->getID();
 
 foreach( $products as $product ){
   
